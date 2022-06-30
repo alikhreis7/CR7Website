@@ -28,6 +28,26 @@
   color: #61dafb;
 }
 
+.form-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.formy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.fit {
+  border-radius: 100px;
+  max-width: 99%;
+  max-height: 99%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
