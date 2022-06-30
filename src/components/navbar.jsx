@@ -8,27 +8,27 @@ function navbar() {
     <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="light" variant="light">
   <ReactBootStrap.Container>
     <img src={logo} alt="Logo" width="120" height="80" />
-  <ReactBootStrap.Navbar.Brand href="/">Cristiano Ronaldo Football</ReactBootStrap.Navbar.Brand>
+  <ReactBootStrap.Navbar.Brand href="/CR7-SEG3125-Step3/">Cristiano Ronaldo Football</ReactBootStrap.Navbar.Brand>
   <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
     <ReactBootStrap.Nav className="me-auto">
-    <ReactBootStrap.Nav.Link href="/" color="black" >Home</ReactBootStrap.Nav.Link>
+    <ReactBootStrap.Nav.Link href="/CR7-SEG3125-Step3/" color="black" >Home</ReactBootStrap.Nav.Link>
     <ReactBootStrap.NavDropdown title="All About Us" id="aboutus">
-        <ReactBootStrap.NavDropdown.Item href="/#/AboutUs">About Us</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item href="/#/AboutCristiano">About Cristiano</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item href="/#/ContactUs">Contact Us</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item href="/CR7-SEG3125-Step3/#/AboutUs">About Us</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item href="/CR7-SEG3125-Step3/#/AboutCristiano">About Cristiano</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item href="/CR7-SEG3125-Step3/#/ContactUs">Contact Us</ReactBootStrap.NavDropdown.Item>
       </ReactBootStrap.NavDropdown>
 
       <ReactBootStrap.NavDropdown title="Shop Our Products" id="shop">
-        <ReactBootStrap.NavDropdown.Item href="/#/Jerseys">Jerseys</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item href="/#/Balls">Balls</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item href="/#/Cleats">Cleats</ReactBootStrap.NavDropdown.Item>
-        <ReactBootStrap.NavDropdown.Item href="/#/Gloves">Gloves</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item href="/CR7-SEG3125-Step3/#/Jerseys">Jerseys</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item href="/CR7-SEG3125-Step3/#/Balls">Balls</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item href="/CR7-SEG3125-Step3/#/Cleats">Cleats</ReactBootStrap.NavDropdown.Item>
+        <ReactBootStrap.NavDropdown.Item href="/CR7-SEG3125-Step3/#/Gloves">Gloves</ReactBootStrap.NavDropdown.Item>
       </ReactBootStrap.NavDropdown>
     </ReactBootStrap.Nav>
     <ReactBootStrap.Nav>
-      <ReactBootStrap.Nav.Link href="/#/login">Log-In</ReactBootStrap.Nav.Link>
-      <ReactBootStrap.Nav.Link eventKey={2} href="/#/signup"> Sign-Up </ReactBootStrap.Nav.Link>
+      <ReactBootStrap.Nav.Link href="/CR7-SEG3125-Step3/#/login">Log-In</ReactBootStrap.Nav.Link>
+      <ReactBootStrap.Nav.Link eventKey={2} href="/CR7-SEG3125-Step3/#/signup"> Sign-Up </ReactBootStrap.Nav.Link>
 
     
 
