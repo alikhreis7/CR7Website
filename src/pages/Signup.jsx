@@ -27,7 +27,7 @@ function Signup() {
   return (
     <div class="formy">
       <Breadcrumb>
-  <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+  <Breadcrumb.Item href="/CR7-SEG3125-Step3/">Home</Breadcrumb.Item>
   <Breadcrumb.Item active>Sign-Up</Breadcrumb.Item>
 </Breadcrumb>
 <h1> <center>Sign-Up</center> </h1>

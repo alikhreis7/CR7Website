@@ -16,7 +16,7 @@ function Gloves() {
 <div>
 
 <Breadcrumb>
-  <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+  <Breadcrumb.Item href="/CR7-SEG3125-Step3/">Home</Breadcrumb.Item>
   <Breadcrumb.Item active>Shop Our Products</Breadcrumb.Item>
   <Breadcrumb.Item active>Goalie Gloves</Breadcrumb.Item>
 </Breadcrumb>

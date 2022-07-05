@@ -15,7 +15,7 @@ function AboutUs() {
   return (
 <div>
 <Breadcrumb>
-  <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+  <Breadcrumb.Item href="/CR7-SEG3125-Step3/">Home</Breadcrumb.Item>
   <Breadcrumb.Item active>All About Us</Breadcrumb.Item>
   <Breadcrumb.Item active>About Us</Breadcrumb.Item>
 </Breadcrumb>

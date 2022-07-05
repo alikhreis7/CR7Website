@@ -13,7 +13,7 @@ function Login() {
 
   <div class="form-center">
 <Breadcrumb>
-  <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+  <Breadcrumb.Item href="/CR7-SEG3125-Step3/">Home</Breadcrumb.Item>
   <Breadcrumb.Item active>Log-In</Breadcrumb.Item>
 </Breadcrumb>
 <h1> <center>Log-In</center> </h1>
