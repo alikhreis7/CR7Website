@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CR7Website/static/css/main.1849d8cd.css",
-    "main.js": "/CR7Website/static/js/main.9de3541c.js",
+    "main.js": "/CR7Website/static/js/main.1077a04f.js",
     "static/js/787.69a56aea.chunk.js": "/CR7Website/static/js/787.69a56aea.chunk.js",
     "static/media/cr71.jpeg": "/CR7Website/static/media/cr71.52950e6a48dad58ecaf4.jpeg",
     "static/media/ronaldofamily.jpeg": "/CR7Website/static/media/ronaldofamily.e36c1da2cea996f02b8f.jpeg",
@@ -28,11 +28,11 @@
     "static/media/logo.jpeg": "/CR7Website/static/media/logo.276347a9acd80e93ac32.jpeg",
     "index.html": "/CR7Website/index.html",
     "main.1849d8cd.css.map": "/CR7Website/static/css/main.1849d8cd.css.map",
-    "main.9de3541c.js.map": "/CR7Website/static/js/main.9de3541c.js.map",
+    "main.1077a04f.js.map": "/CR7Website/static/js/main.1077a04f.js.map",
     "787.69a56aea.chunk.js.map": "/CR7Website/static/js/787.69a56aea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1849d8cd.css",
-    "static/js/main.9de3541c.js"
+    "static/js/main.1077a04f.js"
   ]
 }
