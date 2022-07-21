@@ -27,7 +27,7 @@ function Signup() {
   return (
     <div class="formy">
       <Breadcrumb>
-  <Breadcrumb.Item href="/CR7-SEG3125-Step3/">Home</Breadcrumb.Item>
+  <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
   <Breadcrumb.Item active>Sign-Up</Breadcrumb.Item>
 </Breadcrumb>
 <h1> <center>Sign-Up</center> </h1>
@@ -56,10 +56,11 @@ function Signup() {
           <InputGroup hasValidation>
             <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
             <Form.Control
+              required
               type="text"
               placeholder="Username"
               aria-describedby="inputGroupPrepend"
-              required
+              
             />
             <Form.Control.Feedback type="invalid">
               Please choose a username.
@@ -70,7 +71,7 @@ function Signup() {
       <Row className="mb-3">
         <Form.Group as={Col} md="6" controlId="validationCustom03">
           <Form.Label>Email</Form.Label>
-          <Form.Control type="text" placeholder="Email" required />
+          <Form.Control required type="email" placeholder="Email"  />
           <Form.Control.Feedback type="invalid">
             Please provide a valid email.
           </Form.Control.Feedback>
@@ -98,7 +99,9 @@ function Signup() {
           feedbackType="invalid"
         />
       </Form.Group>
-      <Button type="submit">Submit form</Button>
+      <Button onClick={() => alert("Thank you for your signing up! Get ready for some great deals and memeber exlucives! ")} variant="primary" type="submit">
+        Sign-up
+        </Button>
     </Form>
     </div>
   );

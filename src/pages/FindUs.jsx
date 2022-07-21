@@ -2,7 +2,7 @@ import * as ReactBootStrap from "react-bootstrap";
 import {Link} from 'react-router-dom';
 import NavBar from "../components/navbar";
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import map from "../map.jpeg"
+import map from "../assets/map.jpeg"
 import Card from 'react-bootstrap/Card';
 
 
@@ -29,20 +29,21 @@ function FindUs() {
           Curbside pickup is available during normal store hours.
           </Card.Text>
           <Card.Text>
-          3. We are located on 1625 Bank Street, Ottawa, Ontario, Canada, K1V7Y9
+          3. We are located on 8555 Campeau Drive Init 290, Ottawa, ON, K2T 0K5
+          </Card.Text>
+          <Card.Text>
+          4. NOTE: We are located inside Nike Factory Store.
           </Card.Text>
           <Card.Text>
           Please refer to the map BELOW for exact location. 
           </Card.Text>
           
         </Card.Body>
-        <Card.Img variant="bottom" src={map} height="400" />
+
+       <iframe width="1500" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=nike%20factory%20store%20tanger&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+        {/* <Card.Img variant="bottom" src={map} height="400" /> */}
       </Card>
-
-    
-
-
-
 
     </div>
   );

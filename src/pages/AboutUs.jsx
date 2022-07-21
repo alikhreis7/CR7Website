@@ -5,9 +5,9 @@ import NavBar from "../components/navbar";
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import Mission from '../mission.jpeg';
-import Vision from '../vision.jpeg';
-import Values from '../values.jpeg';
+import Mission from '../assets/mission.jpeg';
+import Vision from '../assets/vision.jpeg';
+import Values from '../assets/values.jpeg';
 
 
 
@@ -15,7 +15,7 @@ function AboutUs() {
   return (
 <div>
 <Breadcrumb>
-  <Breadcrumb.Item href="/CR7-SEG3125-Step3/">Home</Breadcrumb.Item>
+  <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
   <Breadcrumb.Item active>All About Us</Breadcrumb.Item>
   <Breadcrumb.Item active>About Us</Breadcrumb.Item>
 </Breadcrumb>

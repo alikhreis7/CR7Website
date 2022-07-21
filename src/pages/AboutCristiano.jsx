@@ -5,21 +5,22 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Carousel from 'react-bootstrap/Carousel';
-import young from '../young_ronaldo.jpeg';
-import kick from '../kick.jpeg';
-import madrid from '../cr71.jpeg';
+import young from '../assets/young_ronaldo.jpeg';
+import kick from '../assets/kick.jpeg';
+import madrid from '../assets/cr71.jpeg';
 
 
 
 function AboutCristiano() {
     return (
-  <div>
+  <div class="aboutcris">
     <Breadcrumb>
-      <Breadcrumb.Item href="/CR7-SEG3125-Step3/">Home</Breadcrumb.Item>
+      <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
       <Breadcrumb.Item active>All About Us</Breadcrumb.Item>
-      <Breadcrumb.Item active>About Cristiano Ronaldo</Breadcrumb.Item>
+      <Breadcrumb.Item active>About CR7</Breadcrumb.Item>
     </Breadcrumb>
-    <h1> <center>About Ronaldo</center> </h1>
+
+    <h1> <center>About CR7</center> </h1>
 
     <Carousel variant="">
   <Carousel.Item>
@@ -90,6 +91,11 @@ function AboutCristiano() {
     </Card.Footer>
   </Card>
 </CardGroup>
+<center><h1>Watch the video below to learn more about Cristiano Ronaldo! </h1></center>
+
+<iframe width="1500" height="700" src="https://www.youtube.com/embed/kbBD5VWEy1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
       
   </div>
     );

@@ -1,82 +1,46 @@
 import * as ReactBootStrap from "react-bootstrap";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import NavBar from "../components/navbar";
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Button from 'react-bootstrap/Button';
-import manunitedj from '../manunited.jpeg';
-import portugalj from '../portugal.jpeg';
-import juvej from '../juve.jpeg';
+import manunitedj from '../assets/manunited.jpeg';
+import portugalj from '../assets/portugal.jpeg';
+import juvej from '../assets/juve.jpeg';
+import { useEffect } from "react";
+import { items } from "../data"
+import CardComponent from "../components/CardComponent";
+import React from "react";
 
 
-
-function Jerseys() {
+function Jerseys({ addToCart, cart }) {
+  useEffect(() => {
+    console.log(cart)
+  }, []);
+  
+  function addItemToCart(item1){
+    console.log("ITEM ADDING TO CART", item1)
+    addToCart(item1)
+  }
   return (
-<div>
-<Breadcrumb>
-  <Breadcrumb.Item href="/CR7-SEG3125-Step3/">Home</Breadcrumb.Item>
-  <Breadcrumb.Item active>Shop Our Products</Breadcrumb.Item>
-  <Breadcrumb.Item active>Jerseys</Breadcrumb.Item>
-</Breadcrumb>
+    <div>
+      <Breadcrumb>
+        <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+        <Breadcrumb.Item active>Shop Our Products</Breadcrumb.Item>
+        <Breadcrumb.Item active>Jerseys</Breadcrumb.Item>
+      </Breadcrumb>
 
-<h1><center>Team Jerseys</center></h1>
+      <h1><center>Team Jerseys</center></h1>
 
-<CardGroup>
-<Card style={{ width: '0 rem' }}>
-      <Card.Img variant="top" src={juvej} />
-      <Card.Body>
-        <Card.Title>Juventus F.C. Jersey - $150.99</Card.Title>
-        <Card.Text>
-        Straight from Ronaldo’s locker at the Allianz Stadium, 
-        his jerseys in a numbered and hologrammed box, exclusively for collectors 
-        who recognise the value in every detail.
-        </Card.Text>
-        <Card.Text>
-        Of course, you cannot select a size for this Home jersey:
-        Cristiano wears a size “7”.
-        </Card.Text>
-        <center><Button variant="primary" >Add to Cart</Button></center>
-      </Card.Body>
-    </Card>
+      <CardGroup>
+        
+        <CardComponent title={items[0].title} price={items[0].originalPrice} description={items[0].description} img={juvej}  addToCart={addToCart} cart={cart} item={items[0]} />
+        <CardComponent title={items[1].title} price={items[1].originalPrice} description={items[1].description} img={manunitedj} addToCart={addToCart} cart={cart} item={items[1]} />
+        <CardComponent title={items[2].title} price={items[2].originalPrice} description={items[2].description} img={portugalj} addToCart={addToCart} cart={cart} item={items[2]} />
+      </CardGroup>
 
-
-    <Card style={{ width: '0 rem' }}>
-      <Card.Img variant="top" src={manunitedj} />
-      <Card.Body>
-        <Card.Title>Manchester United F.C. Jersey - $140.99</Card.Title>
-        <Card.Text>
-        Be sure you are outfitted properly by grabbing this Cristiano 
-        Ronaldo 2021/22 Home Replica Player Jersey! It's exciting being a 
-        devout Manchester United fan and your youngster will be the biggest one 
-        around in this adidas jersey, featuring crisp team graphics with AEROREADY technology 
-        that will keep them comfortable as they cheer the squad to a victory.
-        </Card.Text>
-        <center> <Button variant="primary">Add to Cart</Button> </center>
-      </Card.Body>
-    </Card>
-
-    <Card style={{ width: '0 rem' }}>
-      <Card.Img variant="top" src={portugalj} />
-      <Card.Body>
-        <Card.Title>Portugal Football Jersey - $110.99</Card.Title>
-        <Card.Text>
-        Rep your team in the Portugal Stadium Home Shirt. 
-        Highly breathable fabric helps keep sweat off your skin, so you stay cool 
-        and comfortable on the pitch or in the stands. The recycled polyester used in Nike 
-        products begins as recycled plastic bottles, which are cleaned, shredded into flakes 
-        and converted into pellets.
-        </Card.Text>
-        <center><Button variant="primary">Add To Cart</Button></center>
-      </Card.Body>
-    </Card>
-    </CardGroup>
-
-    
-
-
-    
-</div>
+    </div>
   );
 }
 
